@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_assignment_turned_in"/>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/listTitle"
+            android:textColor="#333"
+            android:layout_weight=".5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test App"
+            android:textSize="22dp"/>
+        <TextView
+            android:id="@+id/listDate"
+            android:textColor="#333"
+            android:layout_weight=".5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="12/09/2016"
+            android:textSize="22dp"/>
+        <TextView
+            android:id="@+id/listDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_below="@id/listTitle"
+            android:text="Description"
+            android:textSize="18dp"
+            android:paddingTop="8dp"/>
+        <TextView
+            android:id="@+id/listID"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="ID"
+            android:textSize="22dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
